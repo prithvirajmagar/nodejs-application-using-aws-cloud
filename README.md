@@ -1,3 +1,6 @@
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+# These are the steps to followed to execute the project - First we are checking the nodejs application working on our local machine i.e. our laptop and later we will deploy it on AWS Cloud 
+
 # Deploying a Node Js Application on AWS EC2
 
 ### Testing the project locally
@@ -12,6 +15,9 @@ DOMAIN= ""
 PORT=3000
 STATIC_DIR="./client"
 
+# Here, we are adding the api key of Stripe (which a payment gateway platform, where we an make use of their test api for our application)
+# Create a new stripe and go to developer option < api key < copy both the key and paste in the below desired sections...
+
 PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ```
@@ -20,7 +26,7 @@ SECRET_KEY=""
 npm install
 npm run start
 ```
-
+#------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Set up an AWS EC2 instance
 
 1. Create an IAM user & login to your AWS Console
